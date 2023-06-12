@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #cecece;
+}
+
+.main,
+.main a  {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: #016b44;
+    margin: 20px;
+}
