@@ -1,0 +1,135 @@
+body {
+    background-image: url(/testing/media/pexels-cátia-matos-1072179.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 150px 1fr 50px;
+    grid-gap: 1px;
+    height: 100vh;
+    margin: 0;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+#menu {
+	background: #0099cc00;
+    float: right;
+    margin-right: 90px;
+    margin-top: 60px;
+	border-radius: 10px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 40px;
+	text-decoration: none;
+	color: #ffffffd7;
+	font-size: 20px;
+}
+#menu li a:hover {
+	color: #292929;
+	background: #F2F2F2;
+    border-radius: 6px 6px 0 0;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+
+
+#main {
+    grid-area: main;
+}
+#main h1 {
+    color:#f2f2f2ef;
+    font-size: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	margin-top: 250px;
+	margin-bottom: 5px;
+}
+#main h5 {
+    color:#f2f2f270;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+#main p {
+	width: 40%;
+    color:#f2f2f2;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+	margin-top: 100px;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+#pageFooter a {
+	text-decoration: none;
+	color: #ffffffd7;
+	font-size: 20px;
+}
+#pageFooter a:hover {
+	color: #ffffffd7;
+	font-size: 40px;
+}
+#pageFooter li {
+	display: block;
+	line-height: 45px;
+	padding: 0 40px;
+	color: #ffffffd7;
+	font-size: 20px;
+	float: left;
+	display: inline;
+	position: relative;
+}
+#social {
+    float: right;
+}
+.copyright {
+	position: absolute;
+	color: #f2f2f293;
+	padding: 10px 40px;
+}

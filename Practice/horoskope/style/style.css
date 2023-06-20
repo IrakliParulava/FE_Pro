@@ -1,0 +1,162 @@
+body {
+    background-image: url(/Practice/horoskope/img/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 150px 1fr 50px;
+    grid-gap: 1px;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#menu {
+	background: #0099cc00;
+    float: right;
+    margin-right: 90px;
+    margin-top: 60px;
+	border-radius: 10px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 40px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+}
+#menu li a:hover {
+	color: #292929;
+	background: #00d1f6b4;
+    border-radius: 6px;
+}
+
+#main {
+    grid-area: main;
+}
+
+#main h1 {
+    color:#ffffff;
+    font-size: 80px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+#main h3 {
+    color:#f2f2f2cf;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    top: 65%;
+    right: 50%;
+}
+#birthday {
+    width: 400px;
+    height: 70px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 3px 3px 15px rgb(8, 8, 8), -1px -1px 6px rgba(255, 255, 255, 0.4);
+    margin-bottom: 30px;
+}
+.check-button {
+    margin-top: 20px;
+    width: 400px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff9f;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgb(8, 8, 8), -1px -1px 6px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.check-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00d1f6b4;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}  
+.check-button:hover::before {
+    transform: translateX(0);
+}
+
+.horoscope {
+    display: flex;
+    position: relative;
+    width: 1400px;
+    height: 800px;
+    background: #ffffff52;
+    border-radius: 20px;
+    top: 25%;
+    left: 12%;
+    padding: 30px;
+}
+
+.zodiacAvatar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+div.zodiacAvatar img {
+    width: 250px;
+    margin: 15px;
+    opacity: 0.9;
+}
+
+.zodiacText {
+    display: block;
+    width: 30%;
+    padding-top: 20px;
+    position: static;
+}
+
+.zodiac-title {
+    position: fixed;
+    top: 30%;
+    width: 20%;
+    height: 100%;
+}
